@@ -6,7 +6,6 @@ import (
 )
 
 func (c CapSolver) Solve(task map[string]any) (*capSolverResponse, error) {
-	//
 	err := checkParams(task)
 	if err != nil {
 		return nil, err
@@ -47,8 +46,8 @@ func (c CapSolver) Balance() (*capSolverResponse, error) {
 }
 
 func (c *CapSolver) getApiKey() string {
-	if c.apiKey != "" {
-		return c.apiKey
+	if c.ApiKey != "" {
+		return c.ApiKey
 	}
 	return ApiKey
 }

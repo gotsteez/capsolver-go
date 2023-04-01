@@ -1,7 +1,7 @@
 package capsolver_go
 
 type CapSolver struct {
-	apiKey string
+	ApiKey string
 }
 
 type solution struct {
